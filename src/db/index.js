@@ -15,5 +15,6 @@ try {
 
 } catch (error) {
     console.log("MONGODB connection error:", error);
+    process.exit(1); // Exit the process with an error code
 }}
 export default connectDB
